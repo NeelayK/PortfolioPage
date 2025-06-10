@@ -2,209 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neelay Kamat | Portfolio</title>
+    <title>VGNET</title>
+    <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/a9b2082fbc.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
-      </style>
-      <link rel="icon" type="image/x-icon" href="Icons/favicon.png">
-    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/logo.jpg">
+    <script type="module" src="JS/sqlfetch.js"></script>
+    <script type="module" src="JS/htmlfetch.js"></script>
+    <script type="module">
+    import { loadComponent, loadPage } from './JS/htmlfetch.js';
+    window.addEventListener("DOMContentLoaded", () => {
+        loadComponent("header", "header.html");
+        loadComponent("footer", "footer.html");
+        loadComponent("socials", "socials.html");
+        loadPage("home");
+        
+        
+    });
+</script>
+
+    <script type="module" src="JS/script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inika:wght@400;700&family=Outfit:wght@100..900&family=Staatliches&family=Teko:wght@300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
-    <div class="Social">
-        <ul><li><a href="https://codepen.io/Neelay-Kamat" target="_blank">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-codepen"></span>
-        </a></li>
-        <li><a href="https://github.com/NeelayK" target="_blank">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-github"></span>
-        </a></li>
-        <li><a href="https://www.instagram.com/error.neelay100/" target="_blank">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-instagram"></span>
-        </a></li>
-        <li><a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="fa fa-twitter"></span>
-        </a></li>
-
-        <li><a>
-            <span class="fa fa-envelope"></span><div class="email">neelaykamat@gmail.com</div>
-        </a></li>
-        </ul>
-    </div>    
+    <div id="header"></div>
     
-    
-    <div class="home">
-        <div class="Intro">Hi! I'm <p>Neelay</p></div>
-        <div class="Intro">Welcome to my portfolio site! I'm passionate about creating new things may it be web developing, robotics or something entirely different...</div>
-    </div>
-    <div class="css">
-        <div><p>"CSS Art"<i class="fa fa-palette"></p></i><p>I often make CSS art on codepen. Here's some of them...</i></p>
-        </div>
-        
-        <div class="CSSGallery">
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>01<h2>
-                <h3>Dango Daikazuku</h3>
-            </div></div>    
-            
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>02<h2>
-                <h3>Saitama</h3>
-            </div></div> 
+    <div id="socials"></div>
 
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>03<h2>
-                <h3>Anya</h3>
-            </div></div> 
+    <main id="content"></main>
 
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>04<h2>
-                <h3>Giyuu</h3>
-            </div></div> 
+    <div id="footer"></div>
+    <script src="JS/scroll.js"></script>
 
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>05<h2>
-                <h3>Emoji</h3>
-            </div></div> 
-
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>06<h2>
-                <h3>Instagram</h3>
-            </div></div> 
-            
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>07<h2>
-                <h3>Youtube</h3>
-            </div></div>    
-            
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>08<h2>
-                <h3>Steve</h3>
-            </div></div> 
-
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>09<h2>
-                <h3>Egg</h3>
-            </div></div> 
-
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>10<h2>
-                <h3>Melon</h3>
-            </div></div> 
-
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>11<h2>
-                <h3>Arduino</h3>
-            </div></div> 
-
-            <div data-tilt class="card">
-                <div class="content">
-                <h2>12<h2>
-                <h3>Burger</h3>
-            </div></div> 
-            
-            
-    </div>
-
-    <div id="Codepen">
-        <a href="https://codepen.io/Neelay-Kamat" target="_blank">Check out my Codepen for more <i class="fa fa-codepen "></i></a>
-    </div>
-    </div>
-
-    <div class="game">
-        <div id="Game">"Projects <i class="fa fa-code-branch"></i>"
-    </div>
-    <p>These include the applications, sites, games and other projects!</p>
-            
-    <div class="GameGallery">
-        <div data-tilt class="card">
-            <a class="content" href="https://github.com/NeelayK/SnakeGame" target="_blank">
-            <h2>01<h2>
-            <h3>Snake Game</h3>
-            </a></div>   
-            <div data-tilt class="card">
-                <a class="content" href="https://www.hackster.io/legogoa/alexa-automated-babysitter-688ded" target="_blank">
-                <h2>02<h2>
-                <h3>Automatic Baby Sitter</h3>
-                </a></div>   
-                <div data-tilt class="card">
-                    <a class="content" href="https://leafblower-times.netlify.app/" target="_blank">
-                    <h2>03<h2>
-                    <h3>NEWS website</h3>
-                    </a></div>  
-        </div>
-</div>
-
-
-    <div class="art">
-        <div id="art"><div>"Art Gallery <i class="fa fa-brush"></i>"</div><p>Some art that I made...</p></div>
-        <div class="GalleryGrid">
-        <div class="wide"><img src="Art/Gallery1.jpg"></div>
-        <div class="wide"><img src="Art/Gallery2.jpg"></div>
-        <div class="wide"><img src="Art/Gallery3.jpg"></div>
-        <div class="long"><img src="Art/Gallery4.jpg"></div>
-        <div class="long"><img src="Art/Gallery5.jpg"></div>
-        <div class="wide"><img src="Art/Gallery6.png"></div>
-        <div><img src="Art/Gallery7.png"></div>
-        <div class="long"><img src="Art/Gallery8.png"></div>
-        <div class="long"><img src="Art/Gallery9.jpg"></div>
-        <div><img src="Art/Gallery10.jpg"></div>
-        <div class="wide"><img src="Art/Gallery11.jpg"></div>
-        <div ><img src="Art/Gallery12.png"></div>
-    </div>
-    <div id="Insta">
-        <a href="https://www.instagram.com/error.neelay100/" target="_blank">Check out my Instagram for more <i class="fa fa-instagram"></i></a>
-    </div>
-</div>
-    
-    <div class="skills">
-        <div class="Text">"What I Use <i class="fa fa-rocket"></i>"</div>
-        <div class="icons"><img src="Icons/ae.png"><p>AfterEffects</p></div>
-        <div class="icons"><img src="Icons/asprite.png"><p>Asprite</p></div>
-        <div class="icons"><img src="Icons/blender.png"><p>Blender</p></div>
-        <div class="icons"><img src="Icons/css.webp"><p>CSS</p></div>
-        <div class="icons"><img src="Icons/godot.png"><p>Godot</p></div>
-        <div class="icons"><img src="Icons/html.png"><p>HTML</p></div>
-        <div class="icons"><img src="Icons/js.png"><p>Javascript</p></div>
-        <div class="icons"><img src="Icons/Krita.svg"><p>Krita</p></div>
-        <div class="icons"><img src="Icons/lmms.png"><p>LMMS</p></div>
-        <div class="icons"><img src="Icons/Arduino.png"><p>Arduino</p></div>
-        <div class="icons"><img src="Icons/Raspberry.png"><p>RaspberryPi</p></div>
-        <!-----Image by href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658088.htm#query=space&position=1&from_view=search&track=sph">Freepik---->
-    </div>
-<script src="vanilla-tilt.js"></script>
 
 </body>
 </html>
